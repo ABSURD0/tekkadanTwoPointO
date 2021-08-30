@@ -1,0 +1,249 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.site-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+	width: 100%;
+}
+
+nav{
+    height: 6rem;
+    width: 100vw;
+    background-image: linear-gradient(to left, grey, black);
+    box-shadow: 0 3px 20px rgba(0, 0, 0, 0.2);
+    display: flex;
+    position: fixed;
+    z-index: 10;
+}
+
+
+.logo{
+    padding:1vh 1vw;
+    text-align: center;
+    display: flex;
+    align-items: center;
+}
+.logo img {
+    height: 5rem;
+    width: 10rem;
+	opacity: 0.3;
+}
+
+.logo-text {
+margin-left: 1rem;
+font-family:Georgia, 'Times New Roman', Times, serif;
+font-size: 4rem;
+color: #d9e3f3;
+
+}
+
+
+.nav-links{
+    display: flex;
+    list-style: none; 
+    width: 88vw;
+    padding: 0 0.7vw;
+    justify-content: space-evenly;
+    align-items: center;
+    text-transform: uppercase;
+}
+.nav-links li a{
+    text-decoration: none;
+    margin: 0 0.7vw;
+}
+.nav-links li a:hover {
+    color: #d9e3f3;
+    transform: scale(2);
+}
+.nav-links li {
+    
+}
+
+    .nav-links-effects {
+        position: relative;
+        text-decoration: none;
+        border-bottom: 1px solid transparent;
+        border-top: 1px solid transparent;
+        transition: all ease-in-out .5s;
+    }
+
+    .nav-links-effects:hover {
+        transform: scale(1.5);
+        color: mediumturquoise;
+        border-color: mediumturquoise;
+     
+    }
+
+    .nav-links-effects:active {
+   
+        transform: scale(0.9);
+       
+
+        
+    }
+
+
+.nav-links li a:hover::before{
+    
+    width: 80%;
+}
+
+
+.login-button{
+   
+    clip-path: circle(50% at 50% 50%);
+    
+    background-image: none;
+    cursor: pointer;
+    transition: all ease-in-out 1s;
+    width: 4rem;
+    height: 4rem;
+    border: 0;
+    background: #0000;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+
+
+.login-button:hover {
+    background-image: radial-gradient(blue, lightblue);
+    transform: scale(1.2);
+    transition: all ease-in-out .5s;
+}
+
+.login-button:active {
+    transform: scale(.9);
+   
+}
+
+.login-text {
+
+}
+
+
+.join-button{
+    clip-path: circle(50% at 50% 50%);
+    background-image: none;
+    cursor: pointer;
+    width: 4rem;
+    height: 4rem;
+    border: 0;
+    background: #0000;
+    position: relative;
+    transition: .3s;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    }
+
+.join-button:hover {
+    
+    background-image: radial-gradient(blue, lightblue);
+   transform: scale(1.2);
+    transition: all ease-in-out .5s;
+}
+
+.join-button:active {
+    transform: scale(.9);
+}
+
+.join-text {
+    white-space: nowrap;
+   
+   }
+
+
+.hamburger div{
+    width: 30px;
+    height:3px;
+    background: #f2f5f7;
+    margin: 5px;
+    transition: all 0.3s ease;
+}
+.hamburger{
+    display: none;
+}
+
+
+
+
+@media screen and (max-width: 1215px){
+
+    .logo-text {
+        margin-left: 1rem;
+        font-family:Georgia, 'Times New Roman', Times, serif;
+        font-size: 2rem;
+		position: absolute;
+        }
+
+
+    nav{
+        position: fixed;
+        z-index: 3;
+    }
+    .hamburger{
+        display:block;
+        position: absolute;
+        cursor: pointer;
+        right: 5%;
+        top: 50%;
+        transform: translate(-5%, -50%);
+        z-index: 2;
+        transition: all 0.7s ease;
+    }
+    .nav-links{
+        position: fixed;
+        background-image: linear-gradient(black, darkblue);
+        height: 100vh;
+        width: 100%;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        clip-path: circle(50px at 90% -20%);
+        -webkit-clip-path: circle(50px at 90% -10%);
+        transition: all 1s ease-out;
+        pointer-events: none;
+    }
+    .nav-links.open{
+        clip-path: circle(1500px at 90% -10%);
+        -webkit-clip-path: circle(1000px at 90% -10%);
+        pointer-events: all;
+    }
+    .nav-links li{
+        opacity: 0;
+    }
+ 
+    li.fade{
+        opacity: 1;
+    }
+
+    .join-button{
+        margin-bottom: 10rem;
+    }
+
+}
+/*Animating Hamburger Icon on Click*/
+.toggle .line1{
+    transform: rotate(-45deg) translate(-5px,6px);
+}
+.toggle .line2{
+    transition: all 0.7s ease;
+    width:0;
+}
+.toggle .line3{
+    transform: rotate(45deg) translate(-5px,-6px);
+}
+
+
+
