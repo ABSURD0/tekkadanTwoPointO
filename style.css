@@ -3,6 +3,10 @@
     padding: 0;
 }
 
+a {
+    text-decoration: none;
+}
+
 .video-bg{
     width: 100%;
     z-index: -6;
@@ -569,7 +573,7 @@ text-transform: capitalize;
     }
     
     .mid-h3{
-        font-size: 0.5rem;
+        font-size: 0.7rem;
     
     }
     
@@ -577,4 +581,104 @@ text-transform: capitalize;
         font-size: 1rem;
     }
     
+    }
+
+
+
+
+    .cta-container{
+        width: 80%;
+        
+        background: rgb(217, 217, 255);
+        display: flex;
+        flex-direction: row;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    .cta-img{
+        width: 30%;
+    }
+
+    .cta-text-container{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        margin-left: 2rem;
+    }
+
+    .cta-h3-link{
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+text-transform: uppercase;
+font-weight: 700;
+
+    }
+
+    .cta-red-line{
+        height: 0.2rem;
+        width: 5rem;
+        background: red;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
+
+    .cta-p{
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    @media screen and (max-width: 850px){
+
+        .cta-container{
+            width: 80%;
+           
+            background: rgb(217, 217, 255);
+            display: flex;
+            flex-direction: column;
+            margin-top: 1rem;
+            margin-bottom: 1rem;
+        }
+
+        .cta-img{
+            width: 100%;   
+        }
+
+        .cta-text-container{
+            margin-left: 0.5rem;
+            margin-top: 1rem;
+            margin-bottom: 1rem;
+        }
+    }
+
+    @media screen and (max-width: 750px){
+
+        .cta-container{
+            width: 80%;
+        }
+    
+        .cta-img{
+            width: 100%;   
+        }
+    }
+
+    @media screen and (max-width: 650px){
+
+        .cta-container{
+            width: 80%; 
+        }
+    
+        .cta-img{
+            width: 100%;   
+        }
+    }
+
+    @media screen and (max-width: 499px){
+
+        .cta-container{
+            width: 80%;
+             
+        }
+        .cta-img{
+            width: 100%;   
+        }
     }
