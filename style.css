@@ -769,13 +769,15 @@ background: linear-gradient(to bottom, white 0%, white 30%, rgb(230, 230, 230) 3
         width: 40%;
         display: flex;
         flex-direction: column;
+        justify-content: center;
+        align-items: center;
 
         margin-top: 1rem;
         margin-bottom: 1rem;
     }
 
     .marketing-image{
-        width: 100%;
+        width: 80%;
         background: #ececec;
     }
 
@@ -785,7 +787,7 @@ background: linear-gradient(to bottom, white 0%, white 30%, rgb(230, 230, 230) 3
         flex-direction: column;
         justify-content: space-around;
         align-items: center;
-        width: 100%;
+        width: 80%;
     }
 
     .marketing-h3-link{
